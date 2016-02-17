@@ -1,10 +1,8 @@
 # gulp-refresh <a href="https://travis-ci.org/leo/gulp-refresh" target="_blank"><img align="right" src="https://travis-ci.org/leo/gulp-refresh.svg?branch=master"></a>
 
-This repo is based on a fork of Cyrus David's [gulp-livereload](https://github.com/vohof/gulp-livereload). Since he hasn't been active since a long time, it seemed like a good idea to fork it. I'm also using it in a lot of my upcoming projects and I didn't want it to just die.
-
-## What is this?
-
 A lightweight [gulp](https://github.com/gulpjs/gulp) plugin for livereload to be used with the [livereload chrome extension](http://livereload.com/extensions/) or a [livereload middleware](https://github.com/intesso/connect-livereload).
+
+This repo is based on a fork of Cyrus David's [gulp-livereload](https://github.com/vohof/gulp-livereload). Since he hasn't been active since a long time, it seemed like a good idea to fork it. I'm also using it in a lot of my upcoming projects and I didn't want it to just die.
 
 - [Installation](#install)
 - [Upgrade Notice](#3x-upgrade-notice)
