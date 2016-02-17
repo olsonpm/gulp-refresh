@@ -1,22 +1,9 @@
-gulp-livereload
-===
+# gulp-refresh
 
-[![Build Status][1]][2] [![Code Climate][7]][6] [![Livereload downloads][3]][4] [![Tag][9]][8] [![MIT Licensed][5]](#license)
+[![Build Status][1]][2]
 
-[1]: http://img.shields.io/travis/vohof/gulp-livereload/master.svg?style=flat
-[2]: https://travis-ci.org/vohof/gulp-livereload
-
-[3]: http://img.shields.io/npm/dm/gulp-livereload.svg?style=flat
-[4]: https://www.npmjs.com/package/gulp-livereload
-
-[5]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
-
-[6]: https://codeclimate.com/github/vohof/gulp-livereload
-[7]: https://img.shields.io/codeclimate/coverage/github/vohof/gulp-livereload.svg?style=flat
-
-[8]: https://github.com/vohof/gulp-livereload/releases
-[9]: https://img.shields.io/github/tag/vohof/gulp-livereload.svg?style=flat
-
+[1]: https://travis-ci.org/leo/gulp-refresh.svg?branch=master
+[2]: https://travis-ci.org/leo/gulp-refresh
 
 A lightweight [gulp](https://github.com/gulpjs/gulp) plugin for livereload to be used with the [livereload chrome extension](http://livereload.com/extensions/) or a [livereload middleware](https://github.com/intesso/connect-livereload).
 
