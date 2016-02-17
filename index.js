@@ -2,7 +2,8 @@
 
 var es = require('event-stream');
 var minilr = require('mini-lr');
-var relative = require('path').relative;
+var path = require('path');
+var relative = path.relative;
 var _assign = require('lodash.assign');
 var debug = require('debug')('gulp:livereload');
 var gutil = require('gulp-util');
@@ -124,7 +125,8 @@ exports.changed = function (filePath) {
   exports.server.changed({ body: { files: [ filePath ] } });
 
   if (!options.quiet) {
-    gutil.log(magenta(filePath) + ' reloaded.');
+    var filename = magenta(path.basename(filePath))
+    gutil.log('Reloaded ' + filename);
   }
 };
 
