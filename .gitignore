@@ -1,4 +1,10 @@
-node_modules/
+# dependencies
+node_modules
+
+# log
+npm-debug.log
+
+# other
 *.sublime-project
 *.sublime-workspace
 .fuse_hidden*
