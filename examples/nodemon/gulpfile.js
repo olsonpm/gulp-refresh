@@ -10,7 +10,7 @@
 
 
 var gulp = require('gulp')
-var livereload = require('gulp-livereload')
+var livereload = require('gulp-refresh')
 var nodemon = require('nodemon')
 
 gulp.task('watch', function() {

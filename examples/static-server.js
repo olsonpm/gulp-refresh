@@ -2,7 +2,7 @@
 
 var gulp = require('gulp'),
     less = require('gulp-less'),
-    livereload = require('gulp-livereload'),
+    livereload = require('gulp-refresh'),
     http = require('http'),
     st = require('st');
 

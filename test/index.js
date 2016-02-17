@@ -12,7 +12,7 @@ var file = new gutil.File({ base: cwd, cwd: cwd, path: cwd + '/style.css' });
 var keys = ['basePath', 'key', 'cert', 'start', 'quiet', 'reloadPage'];
 var srv, log;
 
-describe('gulp-livereload', function() {
+describe('gulp-refresh', function() {
   beforeEach(function() {
     srv = sinon.stub(minilr, 'Server');
     log = sinon.stub(gutil, 'log');
