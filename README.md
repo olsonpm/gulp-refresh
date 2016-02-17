@@ -22,13 +22,13 @@ Install
 ---
 
 ```
-npm install --save-dev gulp-livereload
+npm install --save-dev gulp-refresh
 ```
 
 3.x Upgrade Notice
 ---
 
-`gulp-livereload` will not automatically listen for changes. You now have to manually call `livereload.listen` unless you set the option `start`:
+`gulp-refresh` will not automatically listen for changes. You now have to manually call `livereload.listen` unless you set the option `start`:
 
 ```js
 livereload({ start: true })
@@ -40,7 +40,7 @@ Usage
 ```javascript
 var gulp = require('gulp'),
     less = require('gulp-less'),
-    livereload = require('gulp-livereload');
+    livereload = require('gulp-refresh');
 
 gulp.task('less', function() {
   gulp.src('less/*.less')
