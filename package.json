@@ -1,6 +1,6 @@
 {
-  "name": "gulp-livereload",
-  "description": "Gulp plugin for livereload.",
+  "name": "gulp-refresh",
+  "description": "Automatically reloads your browser if files change",
   "version": "3.8.1",
   "main": "./index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/vohof/gulp-livereload.git"
+    "url": "git://github.com/leo/gulp-refresh.git"
   },
   "license": "MIT",
   "keywords": [
