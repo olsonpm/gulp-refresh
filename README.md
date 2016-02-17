@@ -1,4 +1,7 @@
-# gulp-refresh <a href="https://travis-ci.org/leo/gulp-refresh" target="_blank"><img align="right" src="https://travis-ci.org/leo/gulp-refresh.svg?branch=master"></a>
+# gulp-refresh
+
+[![Build Status](https://travis-ci.org/leo/gulp-refresh.svg?branch=master)](https://travis-ci.org/leo/gulp-refresh)
+[![License](https://img.shields.io/npm/l/gulp-refresh.svg)](LICENSE.md)
 
 A lightweight [gulp](https://github.com/gulpjs/gulp) plugin for livereload to be used with the [livereload chrome extension](http://livereload.com/extensions/) or a [livereload middleware](https://github.com/intesso/connect-livereload).
 
