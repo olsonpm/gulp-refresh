@@ -4,6 +4,8 @@ A lightweight [gulp](https://github.com/gulpjs/gulp) plugin for livereload to be
 
 This repo is based on a fork of Cyrus David's [gulp-livereload](https://github.com/vohof/gulp-livereload). Since he hasn't been active since a long time, it seemed like a good idea to fork it. I'm also using it in a lot of my upcoming projects and I didn't want it to just die.
 
+Please keep in mind that `v1.0.0` of this plugin is equal to `v3.8.1` (the latest version) of the original plugin. So no extra effort. Just replace `gulp-livereload` with the latest version of `gulp-refresh` in your dependencies.
+
 - [Installation](#install)
 - [Upgrade Notice](#3x-upgrade-notice)
 - [Usage](#usage)
