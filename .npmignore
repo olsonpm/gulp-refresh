@@ -1,0 +1,12 @@
+# dependencies
+node_modules
+
+# config
+.editorconfig
+.gitignore
+.jshintrc
+.travis.yml
+
+# other
+examples
+test
