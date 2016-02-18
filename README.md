@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/leo/gulp-refresh.svg?branch=master)](https://travis-ci.org/leo/gulp-refresh)
 [![License](https://img.shields.io/npm/l/gulp-refresh.svg)](LICENSE.md)
 
-A lightweight [gulp](https://github.com/gulpjs/gulp) plugin for livereload to be used with the [livereload chrome extension](http://livereload.com/extensions/) or a livereload middleware:
+A lightweight [gulp](https://github.com/gulpjs/gulp) plugin for livereload to be used with the [livereload browser extension](http://livereload.com/extensions/) or a livereload middleware:
 
 - [Connect](https://github.com/intesso/connect-livereload) (can also be used with express)
 - [Koa](https://github.com/yosuke-furukawa/koa-livereload)
