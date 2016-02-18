@@ -4,7 +4,6 @@ const es = require('event-stream')
 const minilr = require('mini-lr')
 const path = require('path')
 const relative = path.relative
-const _assign = require('lodash.assign')
 const debug = require('debug')('gulp:livereload')
 const gutil = require('gulp-util')
 const magenta = require('chalk').magenta
@@ -38,7 +37,7 @@ var options = {
  */
 
 module.exports = exports = function (opts) {
-  options = _assign(options, opts)
+  options = Object.assign(options, opts)
 
   var glr = es.map(function (file, done) {
     var filePath = file.path
@@ -91,7 +90,7 @@ exports.listen = function (opts, cb) {
     opts = {}
   }
 
-  options = _assign(options, opts)
+  options = Object.assign(options, opts)
   exports.server = new minilr.Server(options)
   exports.server.listen(options.port, options.host, function () {
     debug('now listening on port %d', options.port)
