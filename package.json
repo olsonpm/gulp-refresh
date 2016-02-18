@@ -13,7 +13,9 @@
   "license": "MIT",
   "keywords": [
     "gulpplugin",
-    "livereload"
+    "livereload",
+    "reload",
+    "refresh"
   ],
   "dependencies": {
     "chalk": "^0.5.1",
