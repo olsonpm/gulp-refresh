@@ -3,7 +3,11 @@
 [![Build Status](https://travis-ci.org/leo/gulp-refresh.svg?branch=master)](https://travis-ci.org/leo/gulp-refresh)
 [![License](https://img.shields.io/npm/l/gulp-refresh.svg)](LICENSE.md)
 
-A lightweight [gulp](https://github.com/gulpjs/gulp) plugin for livereload to be used with the [livereload chrome extension](http://livereload.com/extensions/) or a [livereload middleware](https://github.com/intesso/connect-livereload).
+A lightweight [gulp](https://github.com/gulpjs/gulp) plugin for livereload to be used with the [livereload chrome extension](http://livereload.com/extensions/) or a livereload middleware:
+
+- [Connect](https://github.com/intesso/connect-livereload) (can also be used with express)
+- [Koa](https://github.com/yosuke-furukawa/koa-livereload)
+- [Express](https://www.npmjs.com/package/express-livereload)
 
 This repo is based on a fork of Cyrus David's [gulp-livereload](https://github.com/vohof/gulp-livereload). Since he hasn't been active since a long time, it seemed like a good idea to fork it. I'm also using it in a lot of my upcoming projects and I didn't want it to just die. Please keep in mind that `v1.0.0` of this plugin is equal to `v3.8.1` (the latest version) of the original plugin. So no extra effort. Just replace `gulp-livereload` with the latest version of `gulp-refresh` in your dependencies.
 
