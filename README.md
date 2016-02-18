@@ -62,11 +62,9 @@ gulp.task('watch', function() {
 
 **See [examples](examples)**.
 
-## API & Variables
+## Options
 
-### Options (Optional)
-
-These options can either be set through `livereload.listen(options)` or `livereload(options)`.
+Can either be set through `livereload.listen(options)` or `livereload(options)`.
 
 | Property name | Description                                               | Default value |
 | ------------- | --------------------------------------------------------- | ------------- |
@@ -76,6 +74,8 @@ These options can either be set through `livereload.listen(options)` or `liverel
 | start         | If the server should be started automatically             |               |
 | quiet         | Disable console logging                                   | false         |
 | reloadPage    | Path to the browser's current page for a full page reload | index.html    |
+
+## API
 
 ### livereload([options])
 
