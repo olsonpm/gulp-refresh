@@ -42,22 +42,23 @@ livereload({ start: true })
 
 ## Usage
 
-```javascript
-var gulp = require('gulp'),
-    less = require('gulp-less'),
-    livereload = require('gulp-refresh');
+```js
+const gulp = require('gulp'),
+      sass = require('gulp-sass'),
+      livereload = require('gulp-refresh')
 
-gulp.task('less', function() {
-  gulp.src('less/*.less')
-    .pipe(less())
-    .pipe(gulp.dest('css'))
-    .pipe(livereload());
-});
+gulp.task('scss', () => {
+  gulp
+    .src('src/*.scss')
+    .pipe(sass().on('error', sass.logError)))
+    .pipe(gulp.dest('dist'))
+    .pipe(livereload())
+})
 
-gulp.task('watch', function() {
-  livereload.listen();
-  gulp.watch('less/*.less', ['less']);
-});
+gulp.task('watch', () => {
+  livereload.listen()
+  gulp.watch('src/*.scss', ['scss'])
+})
 ```
 
 **See [examples](examples)**.
