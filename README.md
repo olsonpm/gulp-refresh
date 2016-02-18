@@ -68,14 +68,14 @@ gulp.task('watch', function() {
 
 These options can either be set through `livereload.listen(options)` or `livereload(options)`.
 
-```
-port                     Server port
-host                     Server host
-basePath                 Path to prepend all given paths
-start                    Automatically start
-quiet        false       Disable console logging
-reloadPage   index.html  Path to the browser's current page for a full page reload
-```
+| Property name | Description                                               | Default value |
+| ------------- | --------------------------------------------------------- | ------------- |
+| port          | The server's port                                         |               |
+| host          | The server's host                                         |               |
+| basePath      | Path to prepend all given paths                           |               |
+| start         | If the server should be started automatically             |               |
+| quiet         | Disable console logging                                   | false         |
+| reloadPage    | Path to the browser's current page for a full page reload | index.html    |
 
 ### livereload([options])
 
