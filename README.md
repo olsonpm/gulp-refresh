@@ -12,7 +12,7 @@ A lightweight [gulp](https://github.com/gulpjs/gulp) plugin for livereload to be
 This repo is based on a fork of Cyrus David's [gulp-livereload](https://github.com/vohof/gulp-livereload). Since he hasn't been active since a long time, it seemed like a good idea to fork it. I'm also using it in a lot of my upcoming projects and I didn't want it to just die. Please keep in mind that `v1.0.0` of this plugin is equal to `v3.8.1` (the latest version) of the original plugin. So no extra effort. Just replace `gulp-livereload` with the latest version of `gulp-refresh` in your dependencies.
 
 - [Installation](#install)
-- [Upgrade Notice](#3x-upgrade-notice)
+- [Upgrade Notice](#upgrade-notice)
 - [Usage](#usage)
 - [API](#api--variables)
  - [Options](#options-optional)
@@ -32,8 +32,7 @@ Install
 npm install --save-dev gulp-refresh
 ```
 
-3.x Upgrade Notice
----
+## Upgrade Notice
 
 `gulp-refresh` will not automatically listen for changes. You now have to manually call `livereload.listen` unless you set the option `start`:
 
@@ -41,8 +40,7 @@ npm install --save-dev gulp-refresh
 livereload({ start: true })
 ```
 
-Usage
----
+## Usage
 
 ```javascript
 var gulp = require('gulp'),
@@ -64,8 +62,7 @@ gulp.task('watch', function() {
 
 **See [examples](examples)**.
 
-API & Variables
----
+## API & Variables
 
 ### Options (Optional)
 
@@ -106,11 +103,9 @@ You can also directly access the middleware of the underlying server instance (m
 
 gulp-livereload also reveals the underlying server instance for direct access if needed. The instance is a "mini-lr" instance that this wraps around. If the server is not running then this will be `undefined`.
 
-Debugging
----
+## Debugging
 
-Set the `DEBUG` environment variables to `*` to see what's going on
-
+Set the `DEBUG` environment variables to `*` to see what's going on.
 
 ```
 $ DEBUG=* gulp <task>
