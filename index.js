@@ -1,13 +1,13 @@
-'use strict';
+'use strict'
 
-var es = require('event-stream');
-var minilr = require('mini-lr');
-var path = require('path');
-var relative = path.relative;
-var _assign = require('lodash.assign');
-var debug = require('debug')('gulp:livereload');
-var gutil = require('gulp-util');
-var magenta = require('chalk').magenta;
+const es = require('event-stream')
+const minilr = require('mini-lr')
+const path = require('path')
+const relative = path.relative
+const _assign = require('lodash.assign')
+const debug = require('debug')('gulp:livereload')
+const gutil = require('gulp-util')
+const magenta = require('chalk').magenta
 
 /**
  * Global Options
@@ -19,9 +19,9 @@ var magenta = require('chalk').magenta;
  * reloadPage       The page to reload upon issuing a full page reload
  */
 var options = {
-    quiet: false,
-    reloadPage: 'index.html'
-};
+  quiet: false,
+  reloadPage: 'index.html'
+}
 
 /**
  * Create a stream for telling
@@ -37,26 +37,26 @@ var options = {
  * @param [opts.quiet=false]
  */
 
-module.exports = exports = function(opts) {
-  options = _assign(options, opts);
+module.exports = exports = function (opts) {
+  options = _assign(options, opts)
 
-  var glr = es.map(function(file, done) {
-    var filePath = file.path;
-    exports.changed(filePath);
-    done(null, file);
-  });
+  var glr = es.map(function (file, done) {
+    var filePath = file.path
+    exports.changed(filePath)
+    done(null, file)
+  })
 
-  if (options.start) exports.listen(options);
+  if (options.start) exports.listen(options)
 
-  return glr;
-};
+  return glr
+}
 
 // Note: This is a good way to directly set the settings once throughout
 // the program, a reference to the global options
-exports.options = options;
+exports.options = options
 
 // A way to grab or change the underlying server instance
-exports.server = undefined;
+exports.server = undefined
 
 /**
  * Express middleware
@@ -64,7 +64,7 @@ exports.server = undefined;
  * A direct reference to the underlying servers middleware reference
  */
 
-exports.middleware = minilr.middleware;
+exports.middleware = minilr.middleware
 
 /**
  * Start the livereload server
@@ -81,23 +81,23 @@ exports.middleware = minilr.middleware;
  * @param {function} [cb] callback
  */
 
-exports.listen = function(opts, cb) {
-  if (exports.server) return;
+exports.listen = function (opts, cb) {
+  if (exports.server) return
 
   if (typeof opts === 'number') {
-    opts = { port: opts };
+    opts = { port: opts }
   } else if (typeof opts === 'function') {
-    cb = opts;
-    opts = {};
+    cb = opts
+    opts = {}
   }
 
-  options = _assign(options, opts);
-  exports.server = new minilr.Server(options);
-  exports.server.listen(options.port, options.host, function() {
-    debug('now listening on port %d', options.port);
-    if(typeof cb === 'function') cb.apply(exports.server, arguments);
-  });
-};
+  options = _assign(options, opts)
+  exports.server = new minilr.Server(options)
+  exports.server.listen(options.port, options.host, function () {
+    debug('now listening on port %d', options.port)
+    if (typeof cb === 'function') cb.apply(exports.server, arguments)
+  })
+}
 
 /**
  * Instruct the server that a file has changed
@@ -112,23 +112,25 @@ exports.listen = function(opts, cb) {
 
 exports.changed = function (filePath) {
   if (!exports.server) {
-    debug('no server listening, nothing notified.');
-    return;
-  }
-  if (typeof filePath === 'object') {
-    filePath = filePath.path;
-  }
-  if (options.basePath) {
-    filePath = '/' + relative(options.basePath, filePath);
+    debug('no server listening, nothing notified.')
+    return
   }
 
-  exports.server.changed({ body: { files: [ filePath ] } });
+  if (typeof filePath === 'object') {
+    filePath = filePath.path
+  }
+
+  if (options.basePath) {
+    filePath = '/' + relative(options.basePath, filePath)
+  }
+
+  exports.server.changed({ body: { files: [ filePath ] } })
 
   if (!options.quiet) {
     var filename = magenta(path.basename(filePath))
-    gutil.log('Reloaded ' + filename);
+    gutil.log('Reloaded ' + filename)
   }
-};
+}
 
 /**
  * Invoke a full page reload, including all assets
@@ -139,6 +141,6 @@ exports.changed = function (filePath) {
  *
  * * @param  {string} [filePath]
  */
-exports.reload = function(filePath) {
-    exports.changed(filePath || options.reloadPage);
-};
+exports.reload = function (filePath) {
+  exports.changed(filePath || options.reloadPage)
+}
