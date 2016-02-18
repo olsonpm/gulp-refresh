@@ -23,7 +23,6 @@ This repo is based on a fork of Cyrus David's [gulp-livereload](https://github.c
  - [.middleware](#middleware)
  - [.server](#server)
 - [Debugging](#debugging)
-- [License](#license)
 
 Install
 ---
