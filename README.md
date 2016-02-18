@@ -34,10 +34,12 @@ npm install --save-dev gulp-refresh
 
 ## Upgrade Notice
 
-`gulp-refresh` will not automatically listen for changes. You now have to manually call `livereload.listen` unless you set the option `start`:
+The plugin will not automatically listen for changes anymore. You now have to manually call `livereload.listen` unless you set the option `start`:
 
 ```js
-livereload({ start: true })
+livereload({
+  start: true
+})
 ```
 
 ## Usage
