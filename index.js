@@ -4,7 +4,7 @@ const es = require('event-stream')
 const minilr = require('mini-lr')
 const path = require('path')
 const relative = path.relative
-const debug = require('debug')('gulp:livereload')
+const debug = require('debug')('gulp:refresh')
 const gutil = require('gulp-util')
 const magenta = require('chalk').magenta
 
