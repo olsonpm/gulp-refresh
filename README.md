@@ -5,7 +5,7 @@
 
 A lightweight [gulp](https://github.com/gulpjs/gulp) plugin for livereload to be used with a livereload middleware of your choice:
 
-- [Connect](https://www.npmjs.com/package/connect-livereload) (can also be used with express)
+- [Connect](https://www.npmjs.com/package/connect-livereload)
 - [Koa](https://www.npmjs.com/package/koa-livereload)
 - [Express](https://www.npmjs.com/package/express-livereload)
 
