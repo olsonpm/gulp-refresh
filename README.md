@@ -22,18 +22,18 @@ npm install --save-dev gulp-refresh
 ```js
 const gulp = require('gulp'),
       sass = require('gulp-sass'),
-      livereload = require('gulp-refresh')
+      refresh = require('gulp-refresh')
 
 gulp.task('scss', () => {
   gulp
     .src('src/*.scss')
     .pipe(sass().on('error', sass.logError)))
     .pipe(gulp.dest('dist'))
-    .pipe(livereload())
+    .pipe(refresh())
 })
 
 gulp.task('watch', () => {
-  livereload.listen()
+  refresh.listen()
   gulp.watch('src/*.scss', ['scss'])
 })
 ```
