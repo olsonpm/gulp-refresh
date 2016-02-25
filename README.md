@@ -18,16 +18,6 @@ Install
 npm install --save-dev gulp-refresh
 ```
 
-## Upgrade Notice
-
-The plugin will not automatically listen for changes anymore. You now have to manually call `livereload.listen` unless you set the option `start`:
-
-```js
-livereload({
-  start: true
-})
-```
-
 ## Usage
 
 ```js
