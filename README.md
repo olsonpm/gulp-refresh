@@ -27,7 +27,7 @@ const gulp = require('gulp'),
 gulp.task('scss', () => {
   gulp
     .src('src/*.scss')
-    .pipe(sass().on('error', sass.logError)))
+    .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('dist'))
     .pipe(refresh())
 })
