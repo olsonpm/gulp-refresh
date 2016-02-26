@@ -1,7 +1,7 @@
 {
   "name": "gulp-refresh",
   "description": "Automatically reloads your browser if files change",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
