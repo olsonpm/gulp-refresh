@@ -1,7 +1,4 @@
-# gulp-refresh
-
-[![Build Status](https://travis-ci.org/leo/gulp-refresh.svg?branch=master)](https://travis-ci.org/leo/gulp-refresh)
-[![License](https://img.shields.io/npm/l/gulp-refresh.svg)](LICENSE.md)
+# gulp-refresh [![Build Status](https://travis-ci.org/leo/gulp-refresh.svg?branch=master)](https://travis-ci.org/leo/gulp-refresh)
 
 A lightweight [gulp](https://github.com/gulpjs/gulp) plugin for livereload to be used with a livereload middleware of your choice:
 
