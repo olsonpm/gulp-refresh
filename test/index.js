@@ -98,17 +98,6 @@ describe('gulp-refresh', function() {
     glr.changed(file);
     assert(spy.calledWith(files(file.path)));
   });
-  it('reload', function() {
-    var spy = sinon.spy();
-    srv.returns({ changed: spy, listen: function() {} });
-    glr.listen();
-
-    glr.reload();
-    assert(spy.firstCall.calledWith(files(glr.options.reloadPage)));
-
-    glr.reload('not-index.html');
-    assert(spy.secondCall.calledWith(files('not-index.html')));
-  });
   it('option: basePath', function(done) {
     var spy = sinon.spy();
     srv.returns({ changed: spy , listen: function() {}});
