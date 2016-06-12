@@ -9,6 +9,11 @@
   "files": [
     "index.js"
   ],
+  "author": {
+    "name": "Leo Lamprecht",
+    "email": "mindrun@icloud.com",
+    "url": "http://leo.im"
+  },
   "eslintConfig": {
     "extends": "default",
     "rules": {
