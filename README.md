@@ -50,6 +50,8 @@ Can either be set through `livereload.listen(options)` or `livereload(options)`.
 | quiet         | Disable console logging                                   | false         |
 | reloadPage    | Path to the browser's current page for a full page reload | index.html    |
 
+[Mini-lr options](https://github.com/elwayman02/mini-lr#options) may also be passed in this object.
+
 ## API
 
 ### livereload([options])
